@@ -5,13 +5,21 @@ A simple framework to run custom commands on receipt of Meshtastic packets.
 
 ## Getting started
 ### Installation and Setup
+#### Linux
 ```bash
 git clone https://github.com/bmswens/Meshtastic-Handler.git
 cd Meshtastic-Handler
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.linux.txt
 ```
+
+**Linux installation notes:**
+
+If you are on a linux system and if the voice output is not working , then
+install `espeak`, `ffmpeg` and `libespeak1` as shown below: 
+
+`sudo apt update && sudo apt install espeak ffmpeg libespeak1`
 
 ### Running
 `python ./src/hander.py`
